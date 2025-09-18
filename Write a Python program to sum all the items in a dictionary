@@ -1,0 +1,7 @@
+d = {'One': 10, 'Two': 20, 'Three': 30}
+
+# Get the sum of all values in the dictionary
+result = sum(d.values())
+
+# Output the result
+print(result)
