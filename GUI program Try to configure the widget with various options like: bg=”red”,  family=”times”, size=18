@@ -1,0 +1,15 @@
+import tkinter as tk  # Use lowercase 'tkinter' for Python 3
+
+# Create main window
+root = tk.Tk()
+
+# Create a Canvas widget with a red background
+O = tk.Canvas(root, bg="red", width=500, height=500)
+O.pack()
+
+# Create a label widget
+n = tk.Label(root, text="Hello World")
+n.pack()
+
+# Run the application
+root.mainloop()
