@@ -1,0 +1,6 @@
+def reverse_value():
+    value = input("enter a value to reverse:")
+    reversed_value = value[::-1]
+    print("reverse value:", reversed_value)
+
+reverse_value()
