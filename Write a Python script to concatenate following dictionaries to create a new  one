@@ -1,0 +1,14 @@
+# Define the dictionaries
+a = {101: 'abc', 102: 'pqr', 103: 'xyz'}  # Corrected syntax for dictionary
+b = {'Name': 'Bhumi', 'Surname': 'Salaskar'}  # Corrected dictionary structure
+c = {'Department': 'IT', 'Year': 'SY'}  # Corrected dictionary structure
+
+# Initialize an empty dictionary d
+d = {}
+
+# Loop through each dictionary and update d
+for dictionary in [a, b, c]:
+    d.update(dictionary)
+
+# Print the result
+print(d)
