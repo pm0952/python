@@ -1,0 +1,20 @@
+import geometry
+
+def pointyShapeVolume(x, h, square):
+    # Determine the base area
+    if square:
+        base = geometry.squareArea(x)
+    else:
+        base = geometry.circleArea(x)
+    
+    # Volume of a pyramid-like shape
+    return h * base / 3.0
+
+# Checking the available functions in the geometry module
+print(dir(geometry))
+
+# Calculate volume with a square base
+print(pointyShapeVolume(4, 2.6, True))  # Square base, x=4, height=2.6
+
+# Calculate volume with a circular base
+print(pointyShapeVolume(4, 2.6, False))  # Circular base, x=4, height=2.6
