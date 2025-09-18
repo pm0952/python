@@ -1,0 +1,37 @@
+# Parent class Shape
+class Shape:
+    author = 'Ashwin Mehta'
+
+    # Constructor for Shape class
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    # Method to calculate area of a rectangle
+    def area(self):
+        a = self.x * self.y
+        print('Area of a rectangle:', a)
+        print('Author:', self.author)
+
+
+# Child class Square, inheriting from Shape
+class Square(Shape):
+    # Constructor for Square class
+    def __init__(self, x):
+        # Calling parent class constructor
+        super().__init__(x, x)  # Square has equal sides, so x is passed for both x and y
+
+    # Method to calculate area of a square
+    def area(self):
+        a = self.x * self.x
+        print('Area of a square:', a)
+        print('Author:', self.author)
+
+
+# Create a Shape object (Rectangle)
+rectangle = Shape(10, 5)
+rectangle.area()
+
+# Create a Square object
+square = Square(4)
+square.area()
