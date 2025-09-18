@@ -1,0 +1,21 @@
+l1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+print("Original List is", l1)
+
+# Removing 0th, 2nd, 4th, and 5th elements
+print("According to the question we have to remove 0th->1, 2nd->3, 4th->5, 5th->6")
+
+# Remove 0th element (index 0)
+l1.pop(0)
+print("After Removal of 0th element, Now List is", l1)
+
+# Remove 2nd element (index 2), after previous removal the list is shifted
+l1.pop(2)
+print("After Removal of 2nd element (original 3rd element) is", l1)
+
+# Remove 4th element (index 4), after previous removals the list is shifted
+l1.pop(4)
+print("After Removal of 4th element (original 5th element) is", l1)
+
+# Remove 5th element (index 5), after previous removals the list is shifted
+l1.pop(5)
+print("After Removal of 5th element (original 6th element) is", l1)
