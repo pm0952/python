@@ -1,0 +1,16 @@
+def file_read_from_tail(fname, lines):
+    try:
+        # Open the file in read mode
+        with open(fname, 'r') as f:
+            # Read all lines of the file
+            all_lines = f.readlines()
+
+        # Print the last 'lines' number of lines
+        for line in all_lines[-lines:]:
+            print(line, end='')
+
+    except FileNotFoundError:
+        print(f"The file {fname} does not exist.")
+
+# Call the function to read the last 3 lines of 'salastar.txt'
+file_read_from_tail('salastar.txt', 3)
