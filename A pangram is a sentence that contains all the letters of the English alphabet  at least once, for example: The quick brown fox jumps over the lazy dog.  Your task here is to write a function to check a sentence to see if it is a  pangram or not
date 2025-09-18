@@ -1,0 +1,16 @@
+import string
+import sys
+
+# For Python 2 compatibility: use raw_input instead of input
+if sys.version_info[0] < 3:
+    input = raw_input
+
+def ispangram(sentence, alphabet=string.ascii_lowercase):
+    """
+    Check if the sentence contains every letter in the alphabet at least once.
+    """
+    alphaset = set(alphabet)
+    return alphaset <= set(sentence.lower())
+
+# Prompt user for input and print whether it is a pangram
+print(ispangram(input('Sentence: ')))
