@@ -1,0 +1,23 @@
+import tkinter as tk  # Use lowercase 'tkinter' for Python 3
+
+# Create the main window
+top = tk.Tk()
+
+# Create two IntVar() variables to hold the state of the Checkbuttons
+CheckVar1 = tk.IntVar()
+CheckVar2 = tk.IntVar()
+
+# Create the first Checkbutton for Music
+C1 = tk.Checkbutton(top, text="Music", variable=CheckVar1,
+                    onvalue=1, offvalue=0, height=5, width=20)
+
+# Create the second Checkbutton for Video
+C2 = tk.Checkbutton(top, text="Video", variable=CheckVar2,
+                    onvalue=1, offvalue=0, height=5, width=20)
+
+# Pack the checkbuttons into the window
+C1.pack()
+C2.pack()
+
+# Run the main event loop
+top.mainloop()
