@@ -1,0 +1,19 @@
+import tkinter as tk  # Use lowercase 'tkinter' for Python 3
+
+# Create the main window
+root = tk.Tk()
+
+# Create a StringVar to hold the message text
+var = tk.StringVar()
+
+# Create a Message widget with a raised border and bind it to the StringVar
+label = tk.Message(root, textvariable=var, relief=tk.RAISED)
+
+# Set the text in the StringVar
+var.set("Hey!? How are you doing?")
+
+# Pack the widget into the window
+label.pack()
+
+# Run the main event loop
+root.mainloop()
