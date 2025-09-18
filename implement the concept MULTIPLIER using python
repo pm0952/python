@@ -1,0 +1,21 @@
+class Numbers:
+    # Constructor to initialize x and y
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    # Method to add x and y
+    def add(self):
+        return self.x + self.y
+
+    # Method to multiply x by a constant multiplier (5)
+    def multiply(self):
+        MULTIPLIER = 5
+        return self.x * MULTIPLIER
+
+# Creating an object of the Numbers class with x=3 and y=5
+num = Numbers(3, 5)
+
+# Printing the results of the add and multiply methods
+print("Addition:", num.add())
+print("Multiplication with multiplier:", num.multiply())
