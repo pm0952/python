@@ -1,0 +1,9 @@
+def len_s(s):
+    count = 0
+    for i in s:
+        if i != '\n':
+            count += 1
+    print('The total length of the string (excluding newlines) is:', count)
+
+S = 'God is Great'
+len_s(S)
