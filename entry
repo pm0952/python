@@ -1,0 +1,15 @@
+import tkinter as tk  # Use lowercase 'tkinter' for Python 3
+
+# Create the main window
+top = tk.Tk()
+
+# Create a label for the username
+L1 = tk.Label(top, text="User Name")
+L1.pack(side=tk.LEFT)
+
+# Create an entry widget for user input
+E1 = tk.Entry(top, bd=5)
+E1.pack(side=tk.RIGHT)
+
+# Run the main event loop
+top.mainloop()
